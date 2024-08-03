@@ -1,0 +1,32 @@
+{
+    "manifest_version": 3,
+    "name": "Text Morph",
+    "version": "1.0.0",
+    "permissions": [
+      "activeTab",
+      "scripting"
+    ],
+    "action": {
+      "default_popup": "popup.html",
+      "default_icon": {
+        "16": "icons/img.png",
+        "48": "icons/img.png",
+        "128": "icons/img.png"
+      }
+    },
+    "icons": {
+      "16": "icons/img.png",
+      "48": "icons/img.png",
+      "128": "icons/img.png"
+    },
+    "background": {
+      "service_worker": "background.js"
+    },
+    "content_scripts": [
+        {
+            "matches": ["<all_urls>"],
+            "js": ["config.js"]
+        }
+    ]
+  }
+  

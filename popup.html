@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Print Copied Text</title>
+  <style>
+    body {
+      width: 200px;
+      padding: 10px;
+    }
+    button {
+      width: 100%;
+      padding: 10px;
+      font-size: 16px;
+      background-color: rgb(189, 220, 247);
+      border: 0px;
+      border-radius: 20px;
+    }
+    button:hover{
+        opacity: 0.7;
+        cursor: pointer;
+    }
+    select{
+        width: 100%;
+        height: 30px;
+        margin: 10px 0px;
+    }
+    h4,p{
+        text-align: center;
+        margin: 10px 10px;
+    }
+    .translate-div{
+        margin-bottom: 10px;
+    }
+    hr{
+        margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+    <h4 class="main-heading">Text Morph</h4>
+    <hr>
+    <div>
+    <div class="translate-div">
+        <h4>GlobalSpeak</h4>
+        <p>Break Down Language Barriers</p>
+        <select id="form-select" aria-label="Default select example">
+            <option value="Hindi">Hindi</option>
+            <option value="French">French</option>
+            <option value="Spanish">Spanish</option>
+            <option value="German">German</option>
+            <option value="Chinese">Chinese</option>
+          </select>
+    </div>
+</div>
+  <button id="translateButton">Translate</button>
+  <div>
+    <h4>WordWise</h4>
+    <p>Unlock the World of Words</p>
+    <button id="meaningButton">Get Meaning</button>
+  </div>
+  
+  <script src="popup.js"></script>
+</body>
+</html>
